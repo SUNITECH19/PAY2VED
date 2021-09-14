@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PAY2VED</string>
+
+    <string name="provider">Select Provider</string>
+    <string name="circle">Select Circle</string>
+    <string name="BillingUnit">Select Billing Unit</string>
+    <string name="PCNumber">Select P C Number</string>
+    <string name="SubDivision">Select Sub Division</string>
+    <string name="SERVICETYPE">Select Service Type</string>
+    <string name="Company">Select Company</string>
+    <string name="Operator">Select Operator</string>
+
+    <string name="new_title">Add Gateway Number</string>
+    <string name="edit_title">Update Gateway Number</string>
+    <string name="hint_enter_note">Enter Mobile No</string>
+    <string name="gateway">Select Gateway Number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "587263443285",
+    "firebase_url": "https://pay2ved.firebaseio.com",
+    "project_id": "pay2ved",
+    "storage_bucket": "pay2ved.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587263443285:android:fb8707878b1917cd",
+        "android_client_info": {
+          "package_name": "com.pay2ved.recharge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587263443285-pbma74js9577ddeboavogfuha1p28o1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjo0lJ463s91ke7-FHJfKukaemxXmd-vM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587263443285-pbma74js9577ddeboavogfuha1p28o1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

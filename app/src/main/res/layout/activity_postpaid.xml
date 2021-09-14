@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pay2ved.recharge.gprs_home_activity.DthActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txt_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_back"
+            android:inputType="text"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/bg_button_rounded_button"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_button_rounded_button"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_contact"
+                    android:background="@null"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                    android:id="@+id/img_contact"
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:src="@drawable/contacts"
+                    app:tint="@color/gray" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/green"
+            android:textSize="12dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_button_rounded_button"
+            android:textColorHint="@color/black">
+
+            <Spinner
+                android:id="@+id/spnr_provider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:prompt="@string/Operator"
+                android:spinnerMode="dialog"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <!--          Updated By Shailendra on 02/06/2021 -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layoutCustomerDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_button_rounded_button"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Details -"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <!--  Customer Name        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="2dp"
+                    android:text="Customer Name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:id="@+id/textCustomerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="2dp"
+                    android:text="Customer Name"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <!--  Bill Number        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="2dp"
+                    android:text="Bill Number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:id="@+id/textBillNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="2dp"
+                    android:text="2834623423"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <!--  Bill Date        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="2dp"
+                    android:text="Bill Date"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:id="@+id/textBillDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="2dp"
+                    android:text="12/02/21"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <!--  Due Date        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="2dp"
+                    android:text="Due Date"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:id="@+id/textDueDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="2dp"
+                    android:text="22/03/21"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <!--  Bill Amount        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="2dp"
+                    android:text="Bill Amount"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:id="@+id/textBillAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="2dp"
+                    android:text="Rs.432"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <!--  Due Amount        -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="2dp"
+                    android:text="Due Amount"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text=":"/>
+
+                <TextView
+                    android:id="@+id/textDueAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="2dp"
+                    android:text="Rs.222"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--  Set Data in case of Error Code : 2 -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layoutCustomerDetails2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_button_rounded_button"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Details -"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textCustomerDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can still pay bill by enter amount &amp; countinue."
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_rounded_button"
+            android:paddingLeft="12dp"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="42dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_View_Bill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_rounded_orange"
+                android:gravity="center"
+                android:text="CHECK BILL"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_pay_bill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_rounded1"
+                android:backgroundTint="@color/dark_green"
+                android:gravity="center"
+                android:text="PAY BILL"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

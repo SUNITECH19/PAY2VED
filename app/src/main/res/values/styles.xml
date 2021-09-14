@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+    </style>
+
+    <style name="cursorColor" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textCursorDrawable">@color/gray</item>
+    </style>
+
+    <!--    Full Screen Size  -->
+    <style name="AppTheme.FullScreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="fullScreenDialog" parent="AppTheme.FullScreen" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <string name="app_notification_channel_id">pay2ved_notify_channel_id</string>
+
+
+    <style name="ThemeOverlay.SearchView" parent="android:Widget.TextView">
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/colorPrimary</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="searchHintIcon">@color/colorPrimary</item>
+
+    </style>
+
+
+<!-- ===================================================================================  -->
+
+    <style name="ToolTheme" parent="Widget.AppCompat.Light.PopupMenu">
+        <!-- Customize your theme here. -->
+        <item name="android:homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
+<!--        <item name="android:textColor">@color/colorWhite</item>-->
+<!--        <item name="android:drawableTint" tools:targetApi="m">@color/colorWhite</item>-->
+<!--        <item name="android:iconTint" tools:targetApi="o">@color/colorWhite</item>-->
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+<!--        <item name="android:hideOnContentScroll" tools:targetApi="lollipop">true</item>-->
+<!--        <item name="android:resumeWhilePausing" tools:targetApi="lollipop">true</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,126 @@
+{
+  "error": "0",
+  "message": "Circle fetch successfully",
+  "data": [
+    {
+      "id": "0",
+      "name": "Select",
+      "code": "null"
+    },
+    {
+      "id": "1",
+      "name": "Andra Pradesh & Telangana",
+      "code": "AP"
+    },
+    {
+      "id": "2",
+      "name": "Assam",
+      "code": "AS"
+    },
+    {
+      "id": "3",
+      "name": "Bihar & Jharkhand",
+      "code": "BR"
+    },
+    {
+      "id": "4",
+      "name": "Chennai",
+      "code": "CH"
+    },
+    {
+      "id": "5",
+      "name": "Delhi-NCR",
+      "code": "DL"
+    },
+    {
+      "id": "6",
+      "name": "Gujarat",
+      "code": "GJ"
+    },
+    {
+      "id": "8",
+      "name": "Haryana",
+      "code": "HR"
+    },
+    {
+      "id": "7",
+      "name": "Himachal Pradesh",
+      "code": "HP"
+    },
+    {
+      "id": "9",
+      "name": "Jammu Kashmir",
+      "code": "JK"
+    },
+    {
+      "id": "10",
+      "name": "Karnataka",
+      "code": "KA"
+    },
+    {
+      "id": "11",
+      "name": "Kerala",
+      "code": "KL"
+    },
+    {
+      "id": "12",
+      "name": "Kolkata",
+      "code": "KO"
+    },
+    {
+      "id": "14",
+      "name": "Madhya Pradesh & Chhattisgarh",
+      "code": "MP"
+    },
+    {
+      "id": "13",
+      "name": "Maharashtra & Goa",
+      "code": "MH"
+    },
+    {
+      "id": "15",
+      "name": "Mumbai",
+      "code": "MU"
+    },
+    {
+      "id": "16",
+      "name": "North East",
+      "code": "NE"
+    },
+    {
+      "id": "17",
+      "name": "Orissa",
+      "code": "OR"
+    },
+    {
+      "id": "18",
+      "name": "Punjab",
+      "code": "PB"
+    },
+    {
+      "id": "19",
+      "name": "Rajasthan",
+      "code": "RJ"
+    },
+    {
+      "id": "20",
+      "name": "Tamilnadu",
+      "code": "TN"
+    },
+    {
+      "id": "21",
+      "name": "Uttar Pradesh East",
+      "code": "UE"
+    },
+    {
+      "id": "22",
+      "name": "Uttar Pradesh West & Uttarakhand",
+      "code": "UW"
+    },
+    {
+      "id": "23",
+      "name": "West Bengal",
+      "code": "WB"
+    }
+  ]
+}

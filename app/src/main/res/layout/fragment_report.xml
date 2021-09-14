@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".wfragments.FragmentReport">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light" />
+
+            <LinearLayout
+                android:id="@+id/layoutRechargeRpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColorHint="@color/black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_mobile_recharge_24" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="Recharge Report"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light" />
+
+            <LinearLayout
+                android:id="@+id/layoutTransactionRpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColorHint="@color/black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_swap_horiz_transiction_24" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="Transaction Report"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_arrow" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light" />
+
+            <LinearLayout
+                android:id="@+id/layoutCommissionRpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColorHint="@color/black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_outline_payments_24" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="Commission Report"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_arrow" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light" />
+
+            <LinearLayout
+                android:id="@+id/layoutComplaintRpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColorHint="@color/black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_outline_question_answer_complaint_24" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="Complaint Report"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_arrow" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light" />
+
+            <LinearLayout
+                android:id="@+id/layoutPaymentRpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColorHint="@color/black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_outline_payment_24" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="Payment Report"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_arrow" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
